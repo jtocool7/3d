@@ -211,7 +211,7 @@ function createTree( posX, posZ ) {
 
 function createModel(){
     const loader = new GLTFLoader();
-  loader.load('scene.gltf', (gltf) => {
+  loader.load('robot.gltf', (gltf) => {
       gltf.scene.traverse( c => {
           c.castShadow = true;
       })
